@@ -4001,30 +4001,28 @@ input, select, textarea {
 .about-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 4rem;
-    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.about-photo {
+    flex: 0 0 auto;
 }
 
 .about-photo img {
-    width: 260px;
-    height: 260px;
-    object-fit: cover;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
-    border: 6px solid #fff;
-    box-shadow: 0 8px 25px rgba(0,0,0,.25);
+    object-fit: cover;
+    border: 4px solid #fff; /* optional accent border */
 }
 
 .about-text {
-    flex: 1;
-    min-width: 320px;
-    max-width: 700px;
+    flex: 1 1 auto;
 }
 
-.about-text h2 {
-    margin-bottom: 1rem;
-}
-
-.about-text p {
-    text-align: justify;
+@media screen and (max-width: 736px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
 }
