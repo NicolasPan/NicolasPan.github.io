@@ -4039,8 +4039,4 @@ input, select, textarea {
 .about-photo img {
     width: 350px;
     height: 350px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid white;
-    box-shadow: 0 12px 30px rgba(0,0,0,.25);
 }
